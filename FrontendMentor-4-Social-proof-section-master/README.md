@@ -1,6 +1,6 @@
-# Frontend Mentor - Sunnyside agency landing page
+# Frontend Mentor - Social proof section solution
 
-This is a solution to the [Sunnyside agency landing page](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,13 +14,13 @@ This is a solution to the [Sunnyside agency landing page](https://www.frontendme
 
 ## Overview
 
-It's a project I did in January 2023 with my discord learning group.
+A small project I did when I was revisiting HTML and CSS materials.
 
 ### Screenshot
 
-![](/FrontendMentor-3-Sunnyside-agency-landing-page/sunnyside-desktop.png)
+![](./social-proof-section-desktop.png)
 
-![](/FrontendMentor-3-Sunnyside-agency-landing-page/sunnyside-mobile.png)
+![](./social-proof-section-mobile.png)
 
 ### Links
 
@@ -30,15 +30,14 @@ It's a project I did in January 2023 with my discord learning group.
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
+- Mobile-first workflow
 - SASS
-- Basic JS
 
 ### What I learned
 
-CSS GRID, SASS, Basic JS
+Simple revisiting HTML, CSS and SASS
 
 ## Author
 

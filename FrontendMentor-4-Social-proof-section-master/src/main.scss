@@ -1,0 +1,261 @@
+/* || RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: black;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select,
+ul {
+  font-family: inherit;
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* COLORS */
+
+$dark-text: hsl(300, 43%, 22%);
+$light-text: hsl(303, 10%, 53%);
+$light-bg-color: hsl(300, 24%, 96%);
+$footer-text: hsl(228, 45%, 44%);
+
+/* MAIN */
+
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: auto;
+  max-width: 500px;
+}
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 2rem 3rem 2rem;
+  text-align: center;
+
+  &__highlight {
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: $dark-text;
+    padding: 2rem 5rem;
+    line-height: 2.7rem;
+  }
+  &__summary {
+    font-size: 1.7rem;
+    color: $light-text;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}
+
+/* REVIEWS */
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+
+  &__table {
+    padding: 2rem;
+    margin: 1rem 1.3rem;
+    background-color: $light-bg-color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    color: $dark-text;
+  }
+
+  &__stars {
+    display: flex;
+
+    img {
+      margin-right: 1rem;
+    }
+  }
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  margin: 2.2rem;
+  font-size: 1.7rem;
+  color: hsl(0, 0%, 100%);
+
+  &__case {
+    background-color: $dark-text;
+    display: flex;
+    flex-direction: column;
+    margin: 1.8rem auto;
+    border-radius: 8px;
+    padding: 3rem;
+    height: clamp(250px, 275px, 300px);
+  }
+
+  &__biodata {
+    display: flex;
+    align-items: center;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+    :nth-child(2) {
+      color: $light-text;
+      font-weight: 400;
+    }
+  }
+
+  &__text {
+    padding-top: 2rem;
+    word-spacing: 2px;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 7rem;
+
+  a {
+    color: $footer-text;
+  }
+  a:hover {
+    color: $light-text;
+  }
+}
+
+/* MEDIA */
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 1250px;
+    margin: 8rem auto;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 3fr 100px;
+  }
+
+  .hero {
+    text-align: left;
+    justify-content: flex-start;
+
+    &__highlight {
+      padding-left: 0;
+      padding-top: 0;
+      font-size: 5rem;
+      line-height: 4rem;
+    }
+  }
+
+  .reviews {
+    padding: 5rem 7rem;
+
+    &__table {
+      width: 75%;
+      padding: 1rem 2rem;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__text {
+      padding-bottom: 0.5rem;
+    }
+
+    div:nth-child(2) {
+      align-self: center;
+    }
+
+    div:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+
+  .testimonials {
+    grid-column-end: span 2;
+    display: flex;
+
+    &__case {
+      height: 55%;
+      margin: 0 1.3rem;
+    }
+
+    article:first-child {
+      margin-top: 6rem;
+    }
+
+    article:nth-child(2) {
+      align-self: center;
+    }
+
+    article:nth-child(3) {
+      align-self: flex-end;
+
+      margin-bottom: 6rem;
+    }
+  }
+
+  .attribution {
+    grid-column-end: span 2;
+  }
+}
