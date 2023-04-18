@@ -23,13 +23,12 @@
     <section class="logo">
       <img src="./images/logo.svg" alt="logo" />
     </section>
-    <main id="main">
+    <main>
       <section class="form">
         <form action="">
           <fieldset class="form__bill">
             <label for="">Bill</label>
             <input
-              id="bill"
               class="input round-corner"
               type="input"
               placeholder="0"
@@ -44,37 +43,31 @@
                 type="button"
                 name="5"
                 value="5%"
-                id="btn5"
               /><input
                 class="button round-corner"
                 type="button"
                 name="10"
                 value="10%"
-                id="btn10"
               /><input
                 class="button round-corner"
                 type="button"
                 name="15"
                 value="15%"
-                id="btn15"
               /><input
                 class="button round-corner"
                 type="button"
                 name="25"
                 value="25%"
-                id="btn25"
               /><input
                 class="button round-corner"
                 type="button"
                 name="50"
                 value="50%"
-                id="btn50"
               /><input
                 class="button round-corner btnCustom"
                 type="number"
                 name="customTip"
                 placeholder="custom"
-                id="btnCustom"
                 autocomplete="off"
               />
             </div>
@@ -85,9 +78,8 @@
             >
             <input
               class="input round-corner"
-              type="input"
+              type="text"
               placeholder="0"
-              id="people"
               autocomplete="off"
             />
           </fieldset>
@@ -98,19 +90,18 @@
           <p class="result__text">
             Tip Amount <span class="result__person">/ person</span>
           </p>
-          <p class="result__amount">$<span id="tipAmount">0.00</span></p>
+          <p class="result__amount tipAmount">$<span>0.00</span></p>
         </div>
         <div class="result__row">
           <p class="result__text">
             Total <span class="result__person">/ person</span>
           </p>
-          <p class="result__amount">$<span id="tipTotal">0.00</span></p>
+          <p class="result__amount tipTotal">$<span>0.00</span></p>
         </div>
         <input
           class="result__button-reset round-corner"
           type="button"
           value="reset"
-          id="btnReset"
         />
       </section>
     </main>

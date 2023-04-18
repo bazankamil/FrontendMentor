@@ -183,6 +183,9 @@ input {
       display: inline;
       color: $error;
     }
+    .zeroBorder {
+      border: 2px solid $error;
+    }
   }
 
   &__people .input {
@@ -242,6 +245,9 @@ input {
     &:focus-visible {
       outline: none;
     }
+  }
+  .active {
+    background-color: $bg-light;
   }
 }
 
