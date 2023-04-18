@@ -6,7 +6,7 @@ const tipAmount = document.querySelector(".tipAmount span");
 const tipTotal = document.querySelector(".tipTotal span");
 const btnReset = document.querySelector(".result__button-reset");
 //Variable
-let billVal = 0;
+let billVal;
 let peopleVal = 1;
 let activeBtn = 0;
 //Listeners
@@ -15,21 +15,21 @@ bill.addEventListener("keyup", function () {
 });
 people.addEventListener("keyup", function () {
     const err = document.querySelector("#error");
-    const errBorder = document.querySelector('.form__people input');
+    const errBorder = document.querySelector(".form__people input");
     if (this.value == "0") {
         err.classList.toggle("zero");
-        errBorder.classList.add('zeroBorder');
+        errBorder.classList.add("zeroBorder");
         return;
     }
     else {
         err.classList.remove("zero");
-        errBorder.classList.remove('zeroBorder');
+        errBorder.classList.remove("zeroBorder");
         return (peopleVal = this.value);
     }
 });
 buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
-        if (button.classList.contains('btnCustom')) {
+    button.addEventListener("click", function () {
+        if (button.classList.contains("btnCustom")) {
             activeBtn = button.value;
             tipcalc();
         }
@@ -38,16 +38,17 @@ buttons.forEach(function (button) {
             tipcalc();
         }
     });
-    tipAmount.addEventListener('DOMSubtreeModified', function () {
-        btnReset.classList.add('active');
-    });
-    //Reset
-    btnReset.addEventListener("click", function () {
-        location.reload();
-    });
-    //Calculation
-    function tipcalc() {
-        tipTotal.innerHTML = ((((billVal / 100) * activeBtn) + parseInt(billVal)) / peopleVal).toFixed(2);
-        tipAmount.innerHTML = (((billVal / 100) * activeBtn) / peopleVal).toFixed(2);
-    }
 });
+tipAmount.addEventListener("DOMSubtreeModified", function () {
+    btnReset.classList.add("active");
+});
+//Reset
+btnReset.addEventListener("click", function () {
+    location.reload();
+});
+//Calculation
+function tipcalc() {
+    tipTotal.innerHTML = (((billVal / 100) * activeBtn + parseInt(billVal)) /
+        peopleVal).toFixed(2);
+    tipAmount.innerHTML = (((billVal / 100) * activeBtn) / peopleVal).toFixed(2);
+}
