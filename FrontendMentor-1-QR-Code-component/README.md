@@ -18,7 +18,7 @@ I am starting to test my skills as a programmer in projects. Starting with the b
 
 ### Screenshot
 
-![](/FrontendMentor%201%20QR%20Code%20component/FrontendMentor1.png)
+![](/FrontendMentor-1-QR-Code-component/FrontendMentor1.png)
 
 ### Links
 

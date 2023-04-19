@@ -1,0 +1,20 @@
+{
+  "name": "frontendmentor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazankamil/FrontendMentor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bazankamil/FrontendMentor/issues"
+  },
+  "homepage": "https://github.com/bazankamil/FrontendMentor#readme"
+}
