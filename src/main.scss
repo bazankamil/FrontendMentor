@@ -48,6 +48,10 @@ table {
   border-spacing: 0;
 }
 
+body {
+  background-color: #222;
+}
+
 /* || CONTAINER */
 .container {
   width: clamp(25rem, 80vw, 100rem);
@@ -60,9 +64,11 @@ table {
   h1 {
     font-family: "Tilt Prism", cursive;
     font-size: 7rem;
+    color: #3333ff;
   }
   p {
     font-family: "Roboto", sans-serif;
+    color: rgb(182, 163, 163);
   }
 }
 
@@ -77,6 +83,7 @@ table {
     img {
       width: 100%;
       aspect-ratio: 1/1;
+      object-fit: scale-down;
     }
   }
 }

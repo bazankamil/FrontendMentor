@@ -24,8 +24,8 @@ A small project in JS (technically in TS) This was the project that startet my "
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub)
+- Live Site URL: [Add live site URL here](https://bazankamil.github.io/FrontendMentor/FrontendMentor-5-Tip-calculator-app-main/)
 
 ### Built with
 

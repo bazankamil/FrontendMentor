@@ -24,8 +24,8 @@ A small project I did when I was revisiting HTML and CSS materials.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA/hub)
+- Live Site URL: [Add live site URL here](https://bazankamil.github.io/FrontendMentor/FrontendMentor-4-Social-proof-section-master/)
 
 ### Built with
 

@@ -23,8 +23,8 @@ This was a test of my CSS Grid skills
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub)
+- Live Site URL: [Add live site URL here](https://bazankamil.github.io/FrontendMentor/FrontendMentor-2-Testimonials-grid-section/)
 
 ## My process
 

@@ -24,8 +24,8 @@ It's a project I did in January 2023 with my discord learning group.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef/hub)
+- Live Site URL: [Add live site URL here](https://bazankamil.github.io/FrontendMentor/FrontendMentor-3-Sunnyside-agency-landing-page/)
 
 ### Built with
 

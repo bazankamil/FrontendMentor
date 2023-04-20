@@ -22,8 +22,8 @@ I am starting to test my skills as a programmer in projects. Starting with the b
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub)
+- Live Site URL: [Add live site URL here](https://bazankamil.github.io/FrontendMentor/FrontendMentor-1-QR-Code-component/)
 
 ## My process
 
