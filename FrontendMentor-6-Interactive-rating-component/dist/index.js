@@ -1,6 +1,6 @@
 //SELECTORS//
 
-const buttons = document.querySelectorAll(".buttons__score");
+const buttons = document.querySelector(".rating__buttons");
 const submit = document.querySelector(".submit");
 let score = document.querySelector(".score");
 const rating = document.querySelector(".rating");
@@ -13,8 +13,8 @@ submit.addEventListener("click", function (e) {
   thanks.style.display = "flex";
 });
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function (e) {
-    score.innerHTML = buttons[i].innerHTML + " ";
-  });
-}
+buttons.addEventListener("click", function (e) {
+  if (e.target.className == "buttons__score") {
+    score.innerHTML = e.target.innerHTML + " ";
+  }
+});
