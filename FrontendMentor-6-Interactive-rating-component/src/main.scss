@@ -1,0 +1,188 @@
+/* || RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: black;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select,
+ul {
+  font-family: inherit;
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// COLORS //
+
+$dark-bg: hsl(216, 12%, 8%);
+$darker-card: hsl(215, 27%, 12%);
+$dark-card: hsl(215, 20%, 17%);
+$grey-text: hsl(217, 12%, 63%);
+$orange-highlight: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$star-bg: hsl(210, 19%, 18%);
+$score-bg: hsl(215, 18%, 19%);
+$score-number: hsl(212, 8%, 49%);
+$score-hover: hsl(214, 12%, 54%);
+$score-text: hsl(215, 8%, 59%);
+$attribution: hsl(228, 45%, 44%);
+
+// MAIN & SHARED //
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: $dark-bg;
+}
+
+.main {
+  width: 34rem;
+  height: 35rem;
+  margin: 30vh auto;
+  border-radius: 20px;
+  background: linear-gradient($dark-card, $darker-card);
+
+  p {
+    font-size: 1.5rem;
+    color: $grey-text;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    color: $white;
+  }
+}
+
+// RATING //
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  padding: 2.2rem;
+
+  &__star {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $star-bg;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .buttons__score {
+      color: $score-number;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background-color: $star-bg;
+
+      &:hover {
+        background-color: $score-hover;
+        color: $white;
+      }
+
+      &:focus {
+        background-color: $orange-highlight;
+        color: $white;
+      }
+    }
+  }
+
+  &__submit {
+    background-color: $orange-highlight;
+    height: 4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+
+    &:hover {
+      background-color: $white;
+      color: $orange-highlight;
+    }
+  }
+}
+
+// THANKS //
+.thanks {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2.2rem;
+  height: 100%;
+
+  &__img {
+    width: 14rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  &__score {
+    height: 2.8rem;
+    background-color: $score-bg;
+    width: 17rem;
+    margin: 0 auto;
+    color: $orange-highlight;
+    font-size: 1.5rem;
+    padding-top: 0.6rem;
+    border-radius: 2rem;
+  }
+
+  &__text {
+    color: $score-text;
+  }
+}
+
+// ATTRIBUTION //
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: $white;
+}
+
+.attribution a {
+  color: $attribution;
+}
