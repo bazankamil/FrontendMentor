@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <script src="./dist/index.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <section class="data">
+        <form class="data__form">
+          <article class="data__column">
+            <label for="day">Day</label>
+            <input type="text" id="day" placeholder="DD" /><span
+              >Placeholder error</span
+            >
+          </article>
+          <article class="data__column">
+            <label for="month">Month</label>
+            <input type="text" id="month" placeholder="MM" /><span
+              >Placeholder error</span
+            >
+          </article>
+          <article class="data__column">
+            <label for="year">Year</label>
+            <input type="text" id="year" placeholder="YYYY" /><span
+              >Placeholder error</span
+            >
+          </article>
+        </form>
+      </section>
+      <section class="action">
+        <div class="action__div"></div>
+        <button class="action__btn"></button>
+      </section>
+      <section class="result">
+        <article class="result__year">
+          <span class="result__year-number result__number">38</span
+          ><span>years</span>
+        </article>
+        <article class="result__month">
+          <span class="result__month-number result__number">3</span
+          ><span>months</span>
+        </article>
+        <article class="result__day">
+          <span class="result__day-number result__number">26</span
+          ><span>days</span>
+        </article>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor.</a
+      >
+      Coded by
+      <a href="https://github.com/bazankamil" target="_blank"
+        >Historyk Programista.</a
+      >
+    </div>
+  </body>
+</html>
